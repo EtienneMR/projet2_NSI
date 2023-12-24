@@ -1,0 +1,90 @@
+body {
+  background-color: lightblue;
+  font-family: system-ui;
+}
+
+header {
+  background-color: lightcoral;
+  padding: 8px;
+}
+
+.header-icon {
+  display: inline;
+  height: 64px;
+}
+
+.header-text {
+  display: inline-block;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+#difficulty {
+  margin-left: 0.5em;
+}
+
+#game-area {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.petit {
+  font-size: 0.5em;
+}
+
+.img {
+  width: 4em;
+  height: 4em;
+}
+
+.sign {
+  width: 3EM;
+  height: 3em;
+}
+
+.number {
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+#form {
+  margin-top: 32px;
+}
+
+.label {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.icon {
+  height: 1em;
+  margin-left: 0.25em;
+}
+
+#input {
+  margin-right: 1.5em;
+  height: 1.5em;
+}
+
+#css-validator {
+  border: 0;
+  width: 88px;
+  height: 31px;
+}

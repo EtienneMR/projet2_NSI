@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Le jeu des fruits</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="images/apple.png" rel="icon">
+    <script src="scripts/main.js" defer=""></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <img class="header-icon" src="images/apple.png">
+        <div class="header-text">
+            <h1>Le jeu des fruits</h1>
+            <p>Projet n°2 de 1ère NSI</p>
+        </div>
+    </header>
+    <article>
+        <div id="regles">
+            <h2>Règles du jeu</h2>
+            <ul>
+                <li>Le but du jeu est de retrouver le chiffre correspondant au point d'interrogation</li>
+                <li>Pour cela le joueur doit faire correspondre un nombre à chaque fruit ou légume</li>
+                <li>Les lignes doivent être résolues en partant du haut jusqu'en bas</li>
+                <li>La dernière ligne n'a pas de valeur associée, il faut la retrouver</li>
+                <li>Trois essais sont permis pour tenter de trouver le nombre</li>
+            </ul>
+            <label for="niveau" class="label">Niveau de difficulté: <span id="difficulty">très simple</span></label>
+            <input type="range" id="niveau" name="niveau" min="0" max="5" value="0">
+        </div>
+        <div id="game-area"></div>
+        <form id="form">
+            <label for="input" class="label">
+                Quel est la valeur du
+                <img src="images/interrogation.png" class="icon" alt="point d'interrogation">
+            </label>
+            <p>
+                <input name="input" id="input" type="number" required="">
+                <button type="submit" id="bouton">Valider</button>
+            </p>
+            <p id="essais">3 essais restants</p>
+        </form>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img id="css-validator" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valide !" />
+            </a>
+        </p>
+    </article>
+</body>
+
+</html>
